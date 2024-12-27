@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Aroma - Menu</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>  
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="#" class="navbar-logo">Aroma Coffee</a>
+          <div class="navbar-nav">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="location.html">Location</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="navbar-extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"
+              ><i data-feather="shopping-cart"></i>
+                <span class="quantity">0</span>
+            </a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+          </div>
+  
+          <div class="search-form">
+              <input type="search" id="search-box" placeholder="search here...">
+              <label for="search-box"><i data-feather="search"></i></label>
+          </div>
+  
+          <div class="shopping-cart">
+              <div class="cart-item">
+                <img src="image/espresso.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Espresso</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/capuccino.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Capuccino</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/coffeelatte.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Coffee Latte</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/americano.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Americano</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/sandwich.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Sandwich</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/pastacarbonara.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Pasta Carbonara</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/saladbuah.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Salad Buah</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/nasigoreng.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Nasi Goreng</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/cheesecake.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Cheese Cake</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/tiramisu.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Tiramisu</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/eskrimvanila.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Es Krim</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              <div class="cart-item">
+                <img src="image/puddingcoklat.jpg" alt="Espresso">
+                <div class="item-detail">
+                  <h3>Pudding Coklat</h3>
+                  <div class="item-price">Rp 25.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove"></i>
+              </div>
+              
+          </div>
+  
+        </nav>
+      </header>
+
+    <section class="menu">
+        <div class="container">
+            <h2>Menu Aroma</h2>
+
+            <div class="menu-category">
+                <h3>Minuman</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="1" data-name="Espresso"><i data-feather="shopping-cart"></i></a>
+                        <img src="espresso.jpg" alt="Minuman 1">
+                        <div class="menu-item-info">
+                            <h4>Kopi Espresso</h4>
+                            <p>Espresso hitam pekat <br> <br></p>
+                            <p class="price">Rp 25.000</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="2" data-name="Capuccino"><i data-feather="shopping-cart"></i></a>
+                        <img src="capuccino.jpg" alt="Minuman 2">
+                        <div class="menu-item-info">
+                            <h4>Cappuccino</h4>
+                            <p>Kopi espresso dengan susu dan busa susu</p>
+                            <p class="price">Rp 30.000</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="3" data-name="Coffeelatte"><i data-feather="shopping-cart"></i></a>
+                        <img src="coffeelatte.jpg" alt="Minuman 3">
+                        <div class="menu-item-info">
+                            <h4>Latte</h4>
+                            <p>Kopi espresso dengan susu panas</p>
+                            <p class="price">Rp 35.000</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="4" data-name="Americano"><i data-feather="shopping-cart"></i></a>
+                        <img src="americano.jpg" alt="Minuman 4">
+                        <div class="menu-item-info">
+                            <h4>Americano</h4>
+                            <p>Kopi hitam diseduh dengan air panas</p>
+                            <p class="price">Rp 28.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Makanan</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="5" data-name="Sandwich"><i data-feather="shopping-cart"></i></a>
+                        <img src="sandwich.jpg" alt="Makanan 1">
+                        <div class="menu-item-info">
+                            <h4>Sandwich</h4>
+                            <p>Dua lembar roti dengan irisan ayam, sayuran, dan saus</p>
+                            <p class="price">Rp 40.000</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="6" data-name="Pastacarbonara"><i data-feather="shopping-cart"></i></a>
+                        <img src="pastacarbonara.jpg" alt="Makanan 2">
+                        <div class="menu-item-info">
+                            <h4>Pasta Carbonara</h4>
+                            <p>Pasta dengan saus keju, bacon, dan telur</p>
+                            <p class="price">Rp 50.000</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="7" data-name="SaladBuah"><i data-feather="shopping-cart"></i></a>
+                        <img src="saladbuah.jpg" alt="Makanan 3">
+                        <div class="menu-item-info">
+                            <h4>Salad Buah</h4>
+                            <p>Salad dengan campuran buah segar dan saus yogurt</p>
+                            <p class="price">Rp 35.000</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="8" data-name="NasiGoreng"><i data-feather="shopping-cart"></i></a>
+                        <img src="nasigoreng.jpg" alt="Makanan 4">
+                        <div class="menu-item-info">
+                            <h4>Nasi Goreng Special</h4>
+                            <p>Nasi goreng dengan telur, ayam, dan sayuran</p>
+                            <p class="price">Rp 45.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Dessert</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="9" data-name="Cheesecake"><i data-feather="shopping-cart"></i></a>
+                        <img src="cheesecake.jpg" alt="Dessert 1">
+                        <div class="menu-item-info">
+                            <h4>Cheesecake</h4>
+                            <p>Kue keju dengan topping buah segar</p>
+                            <p class="price">Rp 45.000</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="10" data-name="Tiramisu"><i data-feather="shopping-cart"></i></a>
+                        <img src="tiramisu.jpg" alt="Dessert 2">
+                        <div class="menu-item-info">
+                            <h4>Tiramisu</h4>
+                            <p>Kue Italia dengan kopi dan keju mascarpone</p>
+                            <p class="price">Rp 55.000</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="11" data-name="EskrimVanila"><i data-feather="shopping-cart"></i></a>
+                        <img src="eskrimvanila.jpg" alt="Dessert 3">
+                        <div class="menu-item-info">
+                            <h4>Es Krim</h4>
+                            <p>Es krim vanila dengan pilihan topping</p>
+                            <p class="price">Rp 25.000</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#" class="add-to-cart" data-id="12" data-name="Puddingoklat"><i data-feather="shopping-cart"></i></a>
+                        <img src="puddingcoklat.jpg" alt="Dessert 4">
+                        <div class="menu-item-info">
+                            <h4>Puding Coklat</h4>
+                            <p>Puding coklat dengan saus karamel</p>
+                            <p class="price">Rp 30.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <p>Contact Us: 123-456-789 | cafe.aroma@example.com</a></p>
+            <div class="social">
+                <a href="#"><i data-feather="instagram"></i><span>Instagram</span></a> |
+                <a href="#"><i data-feather="facebook"></i><span>Facebook</span></a> | 
+                <a href="#"><i data-feather="twitter"></i><span>Twitter</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

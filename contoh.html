@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ulasan Pengunjung</title>
+  <style>
+        /* Styling untuk form komentar */
+#comment-form {
+  max-width: 600px; /* Atur lebar maksimal form */
+  margin: 0 auto; /* Tengah-tengahkan form */
+  padding: 2rem; /* Tambah ruang di sekitar form */
+  background-color: #f8f8f8; /* Warna latar belakang form */
+  border-radius: 8px; /* Membulatkan sudut form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambah bayangan untuk efek 3D */
+}
+
+/* Styling untuk label */
+#comment-form label {
+  display: block; /* Membuat label menjadi blok */
+  font-size: 1.2rem; /* Ukuran font label */
+  color: #1a120b; /* Warna teks label */
+  margin-bottom: 0.5rem; /* Ruang di bawah label */
+}
+
+/* Styling untuk input teks dan textarea */
+#comment-form input,
+#comment-form textarea {
+  width: 100%; /* Lebar penuh */
+  padding: 1rem; /* Padding dalam input */
+  font-size: 1rem; /* Ukuran font input */
+  margin-bottom: 1rem; /* Ruang di bawah input */
+  border: 1px solid #ccc; /* Garis tepi input */
+  border-radius: 4px; /* Membulatkan sudut input */
+}
+
+/* Styling untuk textarea khusus */
+#comment-form textarea {
+  resize: vertical; /* Membolehkan resize vertikal */
+}
+
+/* Styling untuk tombol submit */
+#comment-form button {
+  background-color: #1a120b; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  padding: 0.8rem 1.5rem; /* Padding dalam tombol */
+  font-size: 1rem; /* Ukuran font tombol */
+  border: none; /* Tanpa garis tepi */
+  border-radius: 4px; /* Membulatkan sudut tombol */
+  cursor: pointer; /* Ganti kursor jadi pointer */
+  transition: background-color 0.3s ease; /* Efek transisi */
+}
+
+/* Efek hover untuk tombol submit */
+#comment-form button:hover {
+  background-color: #543310; /* Warna latar belakang saat hover */
+}
+
+
+  </style>
+</head>
+<body>
+    <form action="saveComment.jsp" method="POST" id="comment-form">
+        <label for="comment-name">Name:</label>
+        <input type="text" id="comment-name" name="comment-name" required>
+        
+        <label for="comment-content">Comment:</label>
+        <textarea id="comment-content" name="comment-content" rows="4" required></textarea>
+        
+        <button type="submit">Submit Comment</button>
+    </form>
+    
+
+</body>
+</html>

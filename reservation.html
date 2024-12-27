@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Aroma - Reservasi</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="Reservasi di Cafe Aroma. Silakan isi formulir untuk melakukan reservasi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">  
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="#" class="navbar-logo">Aroma Coffee</a>
+          <div class="navbar-nav">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="location.html">Location</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="navbar-extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"
+              ><i data-feather="shopping-cart"></i
+            ></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+          </div>
+  
+          <div class="search-form">
+              <input type="search" id="search-box" placeholder="search here...">
+              <label for="search-box"><i data-feather="search"></i></label>
+          </div>
+        </nav>
+      </header>
+
+    <main>
+        <section class="reservation">
+            <div class="container">
+                <h2>Reservation</h2>
+                <p>Please fill out the form below to make a reservation at Cafe Aroma.</p>
+
+                <form action="#" method="GET">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" aria-label="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" aria-label="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" aria-label="Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" aria-label="Date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" aria-label="Time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="people">People</label>
+                        <input type="number" id="people" name="people" min="1" aria-label="People" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" aria-label="Message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact Us: 123-456-789 | cafe.aroma@example.com</a></p>
+            <div class="social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a> | 
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a> | 
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        feather.replace();
+      </script>  
+<script src="script.js"></script>
+</body>
+</html>
